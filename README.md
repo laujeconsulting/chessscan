@@ -1,6 +1,5 @@
 <p align="center">
   <a href="https://github.com/astral-sh/uv" target="blank"><img src="https://github.com/astral-sh/uv/blob/8674968a17e5f2ee0dda01d17aaf609f162939ca/docs/assets/logo-letter.svg" height="100" alt="uv logo" /></a>
-  <a href="https://pre-commit.com/" target="blank"><img src="https://pre-commit.com/logo.svg" height="100" alt="pre-commit logo" /></a>
   <a href="https://github.com/astral-sh/ruff" target="blank"><img src="https://raw.githubusercontent.com/astral-sh/ruff/8c20f14e62ddaf7b6d62674f300f5d19cbdc5acb/docs/assets/bolt.svg" height="100" alt="ruff logo" style="background-color: #ef5552" /></a>
   <a href="https://bandit.readthedocs.io/" target="blank"><img src="https://raw.githubusercontent.com/pycqa/bandit/main/logo/logo.svg" height="100" alt="bandit logo" /></a>
   <a href="https://docs.pytest.org/" target="blank"><img src="https://raw.githubusercontent.com/pytest-dev/pytest/main/doc/en/img/pytest_logo_curves.svg" height="100" alt="pytest logo" /></a>
@@ -32,7 +31,6 @@
 ## Prerequisites
 
 - [Python](https://www.python.org/downloads/) **>=3.13.0 <3.14.0** (_tested with 3.13.1_)
-- [pre-commit](https://pre-commit.com/#install) **>=3.2.0 <5.0.0** (_tested with 4.0.1_)
 - [uv](https://docs.astral.sh/uv/getting-started/installation/) **>=0.5.7** (_tested with 0.5.15_)
 - [docker](https://docs.docker.com/get-docker/) (_optional_)
 
@@ -58,13 +56,7 @@
    git checkout <branch>
    ```
 
-4. Enable pre-commit hooks
-
-   ```bash
-   pre-commit install
-   ```
-
-5. Configure Python environment
+4. Configure Python environment
 
    ```bash
    uv python install
@@ -85,15 +77,6 @@
 working on your project
 
 For more configuration options and details, see the [configuration docs](https://docs.astral.sh/uv/).
-
-### pre-commit
-
-[pre-commit](https://pre-commit.com/) is a framework for managing and maintaining multi-language pre-commit hooks.
-
-**.pre-commit-config.yaml file** ([`.pre-commit-config.yaml`](.pre-commit-config.yaml)): describes what repositories and
-hooks are installed
-
-For more configuration options and details, see the [configuration docs](https://pre-commit.com/).
 
 ### ruff
 
@@ -119,13 +102,6 @@ For more configuration options and details, see the [configuration docs](https:/
 Rules are defined in the [`pyproject.toml`](pyproject.toml).
 
 For more configuration options and details, see the [configuration docs](https://bandit.readthedocs.io/).
-
-### docformatter
-
-[docformatter](https://github.com/PyCQA/docformatter) is a tool designed to format docstrings to
-follow [PEP 257](https://peps.python.org/pep-0257/).
-
-Options are defined in the [`.pre-commit-config.yaml`](.pre-commit-config.yaml).
 
 ---
 

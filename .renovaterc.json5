@@ -12,11 +12,7 @@
   enabledManagers: [
     "dockerfile",
     "github-actions",
-    "pre-commit",
     "pep621",
     "pyenv",
   ],
-  "pre-commit": {
-    enabled: true,
-  },
 }
